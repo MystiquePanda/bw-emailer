@@ -5,6 +5,9 @@
 git clone https://github.com/MystiquePanda/bw-emailer.git
 cd bw-emailer
 yarn install
+
+**in .env file add the API keys as SPENDGRID_APIKEY and SNAILGUN_APIKEY**
+
 yarn prod:start
 ```
 If you dont have yarn - you can install from here: https://classic.yarnpkg.com/en/docs/install/
@@ -28,3 +31,5 @@ if I had more time...
 ## Anything else you wish to include.
 1. Apparently I can't type as fast as I thought, non-syntacticals typos when coding under time limits! - ie. missing <> around email on the spendgrid API
 2. For a real-world email service, I would have put in an automatic failover rather than require a restart to switchover - ie. 10 continueous failed send then switch over to other API
+3 use a secrete Manager for the API Keys
+
