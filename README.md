@@ -22,6 +22,7 @@ if I had more time...
 * make sure the edgecases fail gracefully from email client pov.  
 * more descriptive success/fail message for client. 
 * I would refactor the structure of the code a bit, pull out the validation and plaintextfy out into its own utility file. 
+* refactor the snailgun.js so the polling is in its own function for separation and ease of testing
 
 
 ## Anything else you wish to include.
