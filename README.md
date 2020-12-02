@@ -7,7 +7,7 @@ cd bw-emailer
 yarn install
 yarn prod:start
 ```
-If you dont have yarn - you can install from here: https://classic.yarnpkg.com/en/docs/install/#mac-stable
+If you dont have yarn - you can install from here: https://classic.yarnpkg.com/en/docs/install/
 
 to switch over between email APIS, Change the DEFAULT_EMAIL_API in .env fille
 
