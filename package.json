@@ -5,7 +5,10 @@
   "scripts": {
     "dev:start": "NODE_PATH=./src pm2 start src/bin/www --watch",
     "start": "concurrently  \"yarn run dev:start\" \"yarn pm2 logs\"",
-    "test": "jest"
+    "test": "jest",
+    "prod:start": "NODE_ENV=production NODE_PATH=./src pm2 start src/bin/www --update-env --name .Prod",
+    "prod:stop": "pm2 stop .Prod",
+    "prod:reload": "pm2 reload --update-env .Prod"
   },
   "jest": {
     "testEnvironment": "node",
